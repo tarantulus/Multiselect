@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.draggable.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.sortable.min.js"></script>
+	<script type="text/javascript" src="js/multiselect.js"></script>
+	<title>Demo</title>
+</head>
+
+<body>
+	<div id="container">
+		<ul id="source">
+			<li>this item</li>
+			<li>that item</li>
+			<li>the other item</li>
+			<li>the last item</li>			
+		</ul>
+		<ul id="dest">
+			<li>empty</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+	$('#source').multiselect();
+</script>
+</html>
