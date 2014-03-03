@@ -27,7 +27,8 @@
         $.fn.multiselect = function () {
 			var sortableIn = 0;
             var elem = this;
-            var sortableul = elem.next('ul');
+            var sortableul = $("<ul>").attr({ "id": "dest"});
+			sortableul.appendTo(elem.parent());
             sortableul.sortable({
                 revert: true,
             });
