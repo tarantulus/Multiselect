@@ -31,7 +31,15 @@
 			sortableul.appendTo(elem.parent());
             sortableul.sortable({
                 revert: true,
+            }).droppable({ greedy: true });
+
+            $('body').droppable({
+                drop: function (event, ui) {
+				if(ui.draggable.parent().attr('id') == sortableul.attr('id'))
+                    ui.draggable.remove();
+                }
             });
+			
             elem.children().draggable({
                 connectToSortable: sortableul,
                 helper: "clone",
@@ -40,6 +48,5 @@
             elem.listFilter(elem.parent());
 
         }
-
     }(jQuery));
 
