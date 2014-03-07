@@ -41,8 +41,8 @@
 <a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>JqueryUI Multiselect Plugin.</h3>
 
 <p>Thanks for checking out my multiselect plugin, it creates a searchable, draggable and sortable interface for lists so you can pick multiple, non-unique values.</p>
-<p>To use it, simply create a container (div, span, whatever you like) and then inside, two lists.</p>
-<code><pre>
+<p>To use it, simply create a container (div, span, whatever you like) and then inside, an unordered list.</p>
+<pre>
 <xmp>
 <div id="container">
 		<ul id="source">
@@ -51,16 +51,13 @@
 			<li>the other item</li>
 			<li>the last item</li>			
 		</ul>
-		<ul id="dest">
-			<li>empty</li>
-		</ul>
 	</div>
 
 <script type="text/javascript">
 	$('#source').multiselect();
 </script>
 </xmp>
-</pre></code>
+</pre>
 <h3>The result will look something like this</h3>
 	<div id="container">
 		<ul id="source">
@@ -68,9 +65,6 @@
 			<li>that item</li>
 			<li>the other item</li>
 			<li>the last item</li>			
-		</ul>
-		<ul id="dest">
-			<li>empty</li>
 		</ul>
 	</div>
 

@@ -204,6 +204,7 @@ ul {
   list-style: none;
   border: solid 1px #000;
   padding-left: 20px;
+  min-height: 10px;
 }
 
 ol {
